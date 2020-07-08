@@ -3,14 +3,8 @@
   <JarScanner className="org.langhua.ofbiz.webapp.jarscan.CasJarScanner">
     <JarScanFilter className="org.langhua.ofbiz.webapp.jarscan.CasJarScanFilter" defaultPluggabilityScan="false"
         pluggabilityScan="spring-*.jar,
-                          hibernate-*.jar,
                           cas-server-*.jar,
-                          metrics-spring-*.jar,
-                          thymeleaf-*.jar,
-                          inspektr-*.jar,
-                          jcip-annotations-*.jar,
-                          metrics-annotation-*.jar,
-                          ofbiz.jar"
+                          ofbiz-*-cas-*.jar"
         defaultTldScan="false" tldScan=""/>
   </JarScanner>
 </Context>

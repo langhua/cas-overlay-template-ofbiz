@@ -87,12 +87,30 @@
                     <version>${cas.version}</version>
                     <type>war</type>
                 </dependency>
-                <!-- <dependency>
+                <dependency>
                     <groupId>org.apereo.cas</groupId>
-                    <artifactId>cas-server-support-memcached-monitor</artifactId>
+                    <artifactId>cas-server-support-oauth</artifactId>
                     <version>${cas.version}</version>
                     <type>jar</type>
-                </dependency> -->
+                </dependency>
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-oauth-api</artifactId>
+                    <version>${cas.version}</version>
+                    <type>jar</type>
+                </dependency>
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-oauth-core</artifactId>
+                    <version>${cas.version}</version>
+                    <type>jar</type>
+                </dependency>
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-oauth-services</artifactId>
+                    <version>${cas.version}</version>
+                    <type>jar</type>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
