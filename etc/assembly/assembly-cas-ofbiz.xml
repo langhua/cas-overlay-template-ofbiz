@@ -71,12 +71,12 @@
           <exclude>WEB-INF/lib/caffeine-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-client-core-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-client-support-saml-*.jar</exclude>
-          <exclude>WEB-INF/lib/cas-server-support-influxdb-core-*.jar</exclude>
+          <!-- <exclude>WEB-INF/lib/cas-server-support-influxdb-core-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-server-support-ldap-core-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-server-support-mongo-core-*.jar</exclude>
-          <exclude>WEB-INF/lib/cas-server-support-redis-core-*.jar</exclude>
-          <exclude>WEB-INF/lib/cas-server-support-throttle-*.jar</exclude>
-          <exclude>WEB-INF/lib/cas-server-support-throttle-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-redis-core-*.jar</exclude> -->
+<!--           <exclude>WEB-INF/lib/cas-server-support-throttle-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-throttle-core-*.jar</exclude> -->
           <exclude>WEB-INF/lib/cglib-nodep-*.jar</exclude>
           <exclude>WEB-INF/lib/checker-compat-qual-*.jar</exclude>
           <exclude>WEB-INF/lib/classmate-*.jar</exclude>
@@ -152,7 +152,9 @@
           <exclude>WEB-INF/lib/jquery-*.jar</exclude>
           <exclude>WEB-INF/lib/jul-to-slf4j-*.jar</exclude>
 
+          <!-- <exclude>WEB-INF/lib/hibernate-validator-*.jar</exclude> -->
           <exclude>WEB-INF/lib/hjson-*.jar</exclude>
+          
           <exclude>WEB-INF/lib/knockout-*.jar</exclude>
 
           <exclude>WEB-INF/lib/geronimo-spec-jta-*.jar</exclude>
@@ -161,7 +163,11 @@
           <exclude>WEB-INF/lib/lodash-*.jar</exclude>
           <exclude>WEB-INF/lib/lato-*.jar</exclude>
           <exclude>WEB-INF/lib/ldaptive-*.jar</exclude>
-          <exclude>WEB-INF/lib/log4j-*.jar</exclude>
+          <exclude>WEB-INF/lib/log4j-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/log4j-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/log4j-jcl-*.jar</exclude>
+          <exclude>WEB-INF/lib/log4j-slf4j-impl-*.jar</exclude>
+          <exclude>WEB-INF/lib/log4j-web-*.jar</exclude>
           <exclude>WEB-INF/lib/logging-interceptor-*.jar</exclude>
 
           <exclude>WEB-INF/lib/mchange-commons-java-*.jar</exclude>
@@ -187,9 +193,9 @@
           <exclude>WEB-INF/lib/oro-*.jar</exclude>
           <exclude>WEB-INF/lib/oshi-core-*.jar</exclude>
           <exclude>WEB-INF/lib/oscache-*.jar</exclude>
-          <exclude>WEB-INF/lib/org.apache.servicemix.bundles.antlr-*.jar</exclude>
+          <!-- <exclude>WEB-INF/lib/org.apache.servicemix.bundles.antlr-*.jar</exclude>
           <exclude>WEB-INF/lib/org.apache.servicemix.bundles.dom4j-*.jar</exclude>
-          <exclude>WEB-INF/lib/org.apache.servicemix.bundles.xpp3-*.jar</exclude>
+          <exclude>WEB-INF/lib/org.apache.servicemix.bundles.xpp3-*.jar</exclude> -->
 
           <exclude>WEB-INF/lib/pac4j-cas-*.jar</exclude>
           <exclude>WEB-INF/lib/pac4j-config-*.jar</exclude>
@@ -244,6 +250,34 @@
         </excludes>
       </unpackOptions>
       <useStrictFiltering>true</useStrictFiltering>
+    </dependencySet>
+    <dependencySet>
+      <includes>
+        <include>org.apereo.cas:cas-server-support-oauth:jar</include>
+      </includes>
+      <outputDirectory>WEB-INF/lib</outputDirectory>
+      <unpack>false</unpack>
+    </dependencySet>
+    <dependencySet>
+      <includes>
+        <include>org.apereo.cas:cas-server-support-oauth-api:jar</include>
+      </includes>
+      <outputDirectory>WEB-INF/lib</outputDirectory>
+      <unpack>false</unpack>
+    </dependencySet>
+    <dependencySet>
+      <includes>
+        <include>org.apereo.cas:cas-server-support-oauth-core:jar</include>
+      </includes>
+      <outputDirectory>WEB-INF/lib</outputDirectory>
+      <unpack>false</unpack>
+    </dependencySet>
+    <dependencySet>
+      <includes>
+        <include>org.apereo.cas:cas-server-support-oauth-services:jar</include>
+      </includes>
+      <outputDirectory>WEB-INF/lib</outputDirectory>
+      <unpack>false</unpack>
     </dependencySet>
     <!-- <dependencySet>
       <includes>
