@@ -47,7 +47,7 @@
       <unpack>true</unpack>
       <unpackOptions>
         <excludes>
-          <exclude>WEB-INF/classes/log4j2.xml</exclude>
+          <!-- <exclude>WEB-INF/classes/log4j2.xml</exclude> -->
           <exclude>WEB-INF/classes/truststore.jks</exclude>
 
           <exclude>WEB-INF/lib/accessors-smart-*.jar</exclude>
@@ -71,6 +71,30 @@
           <exclude>WEB-INF/lib/caffeine-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-client-core-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-client-support-saml-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-security-filter-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-authentication-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-authentication-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-ticket-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-authentication-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-events-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-services-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-protocol-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-util-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-configuration-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-configuration-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-configuration-model-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-webflow-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-validation-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-util-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-web-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-authentication-mfa-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-authentication-attributes-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-services-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-audit-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-logout-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-configuration-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-authentication-api-*.jar</exclude>
           <!-- <exclude>WEB-INF/lib/cas-server-support-influxdb-core-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-server-support-ldap-core-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-server-support-mongo-core-*.jar</exclude>
@@ -152,9 +176,19 @@
           <exclude>WEB-INF/lib/jquery-*.jar</exclude>
           <exclude>WEB-INF/lib/jul-to-slf4j-*.jar</exclude>
 
-          <!-- <exclude>WEB-INF/lib/hibernate-validator-*.jar</exclude> -->
+          <exclude>WEB-INF/lib/hibernate-commons-annotations-*.jar</exclude>
+          <exclude>WEB-INF/lib/hibernate-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/hibernate-entitymanager-*.jar</exclude>
+          <exclude>WEB-INF/lib/hibernate-hikaricp-*.jar</exclude>
+          <exclude>WEB-INF/lib/hibernate-jpa-2.1-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/hibernate-validator-*.jar</exclude>
           <exclude>WEB-INF/lib/hjson-*.jar</exclude>
-          
+
+          <exclude>WEB-INF/lib/inspektr-audit-*.jar</exclude>
+          <exclude>WEB-INF/lib/inspektr-common-*.jar</exclude>
+          <exclude>WEB-INF/lib/inspektr-error-*.jar</exclude>
+          <exclude>WEB-INF/lib/inspektr-support-spring-*.jar</exclude>
+
           <exclude>WEB-INF/lib/knockout-*.jar</exclude>
 
           <exclude>WEB-INF/lib/geronimo-spec-jta-*.jar</exclude>
@@ -177,6 +211,7 @@
           <exclude>WEB-INF/lib/metrics-json-*.jar</exclude>
           <exclude>WEB-INF/lib/metrics-jvm-*.jar</exclude>
           <exclude>WEB-INF/lib/metrics-servlets-*.jar</exclude>
+          <exclude>WEB-INF/lib/metrics-spring-*.jar</exclude>
           <exclude>WEB-INF/lib/mina-core-*.jar</exclude>
           <exclude>WEB-INF/lib/mockito-core-*.jar</exclude>
           <exclude>WEB-INF/lib/momentjs-*.jar</exclude>
@@ -190,12 +225,12 @@
           <exclude>WEB-INF/lib/objenesis-*.jar</exclude>
           <exclude>WEB-INF/lib/okhttp-*.jar</exclude>
           <exclude>WEB-INF/lib/okio-*.jar</exclude>
+          <exclude>WEB-INF/lib/org.apache.servicemix.bundles.antlr-*.jar</exclude>
+          <exclude>WEB-INF/lib/org.apache.servicemix.bundles.dom4j-*.jar</exclude>
+          <exclude>WEB-INF/lib/org.apache.servicemix.bundles.xpp3-*.jar</exclude>
           <exclude>WEB-INF/lib/oro-*.jar</exclude>
           <exclude>WEB-INF/lib/oshi-core-*.jar</exclude>
           <exclude>WEB-INF/lib/oscache-*.jar</exclude>
-          <!-- <exclude>WEB-INF/lib/org.apache.servicemix.bundles.antlr-*.jar</exclude>
-          <exclude>WEB-INF/lib/org.apache.servicemix.bundles.dom4j-*.jar</exclude>
-          <exclude>WEB-INF/lib/org.apache.servicemix.bundles.xpp3-*.jar</exclude> -->
 
           <exclude>WEB-INF/lib/pac4j-cas-*.jar</exclude>
           <exclude>WEB-INF/lib/pac4j-config-*.jar</exclude>
@@ -206,6 +241,8 @@
           <exclude>WEB-INF/lib/pac4j-oauth-*.jar</exclude>
           <exclude>WEB-INF/lib/pac4j-oidc-*.jar</exclude>
           <exclude>WEB-INF/lib/pac4j-saml-*.jar</exclude>
+          <exclude>WEB-INF/lib/person-directory-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/person-directory-impl-*.jar</exclude>
           <exclude>WEB-INF/lib/popper.js-*.jar</exclude>
           <exclude>WEB-INF/lib/profiler-*.jar</exclude>
 
@@ -222,12 +259,59 @@
           <exclude>WEB-INF/lib/serializer-*.jar</exclude>
           <exclude>WEB-INF/lib/slf4j-*.jar</exclude>
           <exclude>WEB-INF/lib/snakeyaml-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-aop-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-beans-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-binding-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-1*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-actuator-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-autoconfigure-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-configuration-metadata-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-configuration-processor-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-devtools-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-starter-1*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-starter-actuator-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-starter-data-redis-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-starter-mail-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-starter-tomcat-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-starter-web-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-starter-thymeleaf-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-boot-starter-websocket-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-cloud-commons-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-cloud-config-client-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-cloud-context-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-context-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-data-commons-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-data-keyvalue-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-data-mongodb-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-data-redis-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-expression-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-integration-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-integration-jmx-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-jdbc-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-jms-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-messaging-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-modules-cache-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-orm-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-oxm-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-retry-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-security-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-security-crypto-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-shell-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-tx-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-web-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-webflow-2*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-webflow-client-repo-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-webmvc-*.jar</exclude>
+          <exclude>WEB-INF/lib/spring-websocket-*.jar</exclude>
           <exclude>WEB-INF/lib/stax-api-*.jar</exclude>
           <exclude>WEB-INF/lib/stax2-api-*.jar</exclude>
           <exclude>WEB-INF/lib/store.js-*.jar</exclude>
 
           <exclude>WEB-INF/lib/threads-*.jar</exclude>
           <exclude>WEB-INF/lib/threetenbp-*.jar</exclude>
+          <exclude>WEB-INF/lib/thymeleaf-*.jar</exclude>
           <exclude>WEB-INF/lib/tomcat-annotations-api-*.jar</exclude>
           <exclude>WEB-INF/lib/tomcat-embed-core-*.jar</exclude>
           <exclude>WEB-INF/lib/tomcat-embed-el-*.jar</exclude>
