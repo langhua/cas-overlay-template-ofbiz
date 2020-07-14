@@ -47,7 +47,7 @@
       <unpack>true</unpack>
       <unpackOptions>
         <excludes>
-          <!-- <exclude>WEB-INF/classes/log4j2.xml</exclude> -->
+          <exclude>WEB-INF/classes/log4j2.xml</exclude>
           <exclude>WEB-INF/classes/truststore.jks</exclude>
 
           <exclude>WEB-INF/lib/accessors-smart-*.jar</exclude>
@@ -95,12 +95,54 @@
           <exclude>WEB-INF/lib/cas-server-core-api-logout-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-server-core-api-configuration-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-server-core-authentication-api-*.jar</exclude>
-          <!-- <exclude>WEB-INF/lib/cas-server-support-influxdb-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-monitor-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-api-throttle-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-audit-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-audit-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-configuration-metadata-repository-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-cookie-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-cookie-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-events-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-events-configuration-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-logging-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-logging-config-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-logout-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-logout-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-monitor-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-services-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-services-authentication-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-services-registry-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-tickets-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-tickets-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-util-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-validation-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-validation-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-web-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-web-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-webflow-5*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-core-webflow-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-actions-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-configuration-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-geolocation-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-influxdb-core-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-server-support-ldap-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-metrics-*.jar</exclude>
           <exclude>WEB-INF/lib/cas-server-support-mongo-core-*.jar</exclude>
-          <exclude>WEB-INF/lib/cas-server-support-redis-core-*.jar</exclude> -->
-<!--           <exclude>WEB-INF/lib/cas-server-support-throttle-*.jar</exclude>
-          <exclude>WEB-INF/lib/cas-server-support-throttle-core-*.jar</exclude> -->
+          <exclude>WEB-INF/lib/cas-server-support-oauth-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-oauth-api-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-oauth-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-oauth-services-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-pac4j-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-person-directory-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-pm-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-pm-webflow-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-redis-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-themes-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-throttle-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-throttle-core-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-support-validation-*.jar</exclude>
+          <exclude>WEB-INF/lib/cas-server-webapp-config-*.jar</exclude>
           <exclude>WEB-INF/lib/cglib-nodep-*.jar</exclude>
           <exclude>WEB-INF/lib/checker-compat-qual-*.jar</exclude>
           <exclude>WEB-INF/lib/classmate-*.jar</exclude>
@@ -335,40 +377,5 @@
       </unpackOptions>
       <useStrictFiltering>true</useStrictFiltering>
     </dependencySet>
-    <dependencySet>
-      <includes>
-        <include>org.apereo.cas:cas-server-support-oauth:jar</include>
-      </includes>
-      <outputDirectory>WEB-INF/lib</outputDirectory>
-      <unpack>false</unpack>
-    </dependencySet>
-    <dependencySet>
-      <includes>
-        <include>org.apereo.cas:cas-server-support-oauth-api:jar</include>
-      </includes>
-      <outputDirectory>WEB-INF/lib</outputDirectory>
-      <unpack>false</unpack>
-    </dependencySet>
-    <dependencySet>
-      <includes>
-        <include>org.apereo.cas:cas-server-support-oauth-core:jar</include>
-      </includes>
-      <outputDirectory>WEB-INF/lib</outputDirectory>
-      <unpack>false</unpack>
-    </dependencySet>
-    <dependencySet>
-      <includes>
-        <include>org.apereo.cas:cas-server-support-oauth-services:jar</include>
-      </includes>
-      <outputDirectory>WEB-INF/lib</outputDirectory>
-      <unpack>false</unpack>
-    </dependencySet>
-    <!-- <dependencySet>
-      <includes>
-        <include>org.apereo.cas:cas-server-support-memcached-monitor:jar</include>
-      </includes>
-      <outputDirectory>WEB-INF/lib</outputDirectory>
-      <unpack>false</unpack>
-    </dependencySet> -->
   </dependencySets>
 </assembly>
